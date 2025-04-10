@@ -1,0 +1,298 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    height: 90vh;
+    /* width: 100%; */
+    background-image: url(assets/images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: max(1600px, 125vw);
+    position: relative;
+    background-position: center center;
+}
+
+.main .box {
+    background-color: black;
+    height: 90vh;
+    width: 100%;
+    opacity: 0.62;
+    position: absolute;
+    top: 0;
+
+
+    /* this will make the box to stick up covering all the nav bar alsoooo nav bar will also be in the black opacity box */
+
+}
+
+nav {
+    /* background-color: green; */
+    display: flex;
+    justify-content: space-between;
+    /* there is no use of gap with this */
+
+
+    align-items: center;
+    /* gap: 600px; */
+    margin: auto;
+    /* You can set the margin property to auto to horizontally center the element within its container. */
+    max-width: 90vw;
+    /* the max-width property defines the maximum width of an element. If the content is larger than the maximum width, it will automatically change the height of the element. If the content is smaller than the maximum width, the max-width property has no effect. */
+    height: 90px;
+
+
+}
+
+nav img {
+    width: 130px;
+    color: red;
+    position: relative;
+    z-index: 1;
+
+
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: calc(100% - 90px);
+    position: relative;
+    gap: 24px;
+    padding: 0 25px;
+flex-wrap: wrap;
+}
+
+#first {
+    font-weight: 600;
+    font-size: 34px;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    text-align: center;
+}
+
+#second {
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+}
+
+#third {
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.mail {
+    display: flex;
+    gap: 13px;
+
+}
+
+.lineseperation {
+    height: 5px;
+    background-color: rgb(86, 78, 78);
+
+}
+
+.btn {
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+    /* border-radius: 7px; */
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.eng {
+    border-radius: 2px solid transparent;
+    background: transparent;
+    color: white;
+
+    padding: 2px 22px;
+    border-radius: 5px;
+    appearance: auto;
+    /* box-sizing: border-box; */
+}
+
+.btn-red-si {
+    background-color: white;
+    padding: 3px 9px;
+    border-radius: 5px;
+}
+
+.btn-red-gs {
+    background-color: red;
+    color: white;
+    font-size: 26px;
+    font-weight: 600;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    padding: 5px 24px;
+    border-radius: 32px;
+}
+
+.mail input {
+    background: transparent;
+    /* border: 0 solid transparent; */
+    /* font-weight: 300;
+     */
+    color: white;
+    font-size: 24px;
+
+    font-weight: 400;
+    color: white;
+
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    padding: 2px 22px;
+    border-radius: 32px;
+
+}
+
+.enjoy {
+    max-width: 60vw;
+    margin: auto;
+    color: white;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 42px;
+    padding: 36px 0px;
+    flex-wrap: wrap;
+}
+
+.enjoy .image {
+    position: relative;
+}
+
+.enjoy .image img {
+    width: 500px;
+    position: relative;
+    z-index: 1;
+    /* it will come in front of alll elements
+ we need that only naaaa */
+}
+
+.enjoy .image video {
+    position: absolute;
+    width: 373px;
+    top: 69px;
+    right: 60px;
+}
+
+.text {
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    /* i dont want that to be in center it was not like that in the website */
+
+    /* i am getting text color white becoz i kep it white in its parent class i.e. "enjoy" */
+}
+
+.e1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.e2 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.faq h2 {
+    font-size: 44px;
+    
+}
+
+.faq {
+    color: white;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    padding: 25px 6px;
+    max-width: 120vw;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 25px;
+    padding: 30px 0px;
+}
+
+.faq .box span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+    width: 900px;
+    background-color: #2d2d2d;
+    cursor: pointer;
+    padding: 14px 20px;
+    transition: all 1s ease-out;
+}
+
+/* for hover u have to write like this onlyyyy
+REMEMBER
+ */
+.faq .box span:hover {
+    background-color: rgb(80, 80, 80);
+}
+
+.faq .box svg {
+    color: white;
+    /* i can change the color of svg */
+    /* or else i can use like below
+    filter:invert(1); */
+
+}
+
+footer {
+    color: white;
+    max-width: 80vw;
+    margin: auto;
+    padding: 23px;
+}
+
+footer span{
+    font-size: 16px;
+    margin: 0 100px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+/* .footer .footer-items {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    margin: auto;
+    padding: 23px;
+} */
+.footer a{
+   font-size: 14px; 
+    color: white;
+   
+}
+@media screen and (max-width: 950px) {
+    nav{
+        max-width: 120vw;
+    }
+}
